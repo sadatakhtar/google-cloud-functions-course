@@ -28,3 +28,12 @@ To test the cloud functions locally execute to following command in the director
  functions-framework --target <function_name_here> --debug
 
 ```
+## Deploying our functions
+First we have to set out project ID with the following command:
+```commandline
+gcloud config set project [Your_project_ID_here]
+```
+Then we deploy our functions with this command:
+```commandline
+gcloud functions deploy [FUNCTION_NAME_HERE] --runtime python310 --trigger-http
+```
