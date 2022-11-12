@@ -23,3 +23,8 @@ and execute the following command
 ```commandline
 pip install -r requirements.txt
 ```
+To test the cloud functions locally execute to following command in the directory of the function
+```commandline
+ functions-framework --target <function_name_here> --debug
+
+```
